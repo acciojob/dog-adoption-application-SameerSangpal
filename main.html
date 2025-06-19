@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<h2>Job Application Form</h2>
+  <form method="post">
 
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Name"><br><br>
+
+	<!-- Phone Number -->
+	<label for="phone">Phone Number:</label>
+	<input type="text" id="phone" name="phone" placeholder="Phone Number"><br><br>
+
+	<!-- Address -->
+	<label for="address">Address:</label>
+	<input type="text" id="address" name="address" placeholder="Address"><br><br>
+
+
+    <!-- Have you ever lived with a Dog before? -->
+	  <label>Have you ever lived with a Dog before?:</label>
+	  <input type="checkbox" id="yes" name="yes">
+	  <label for="yes">Yes</label>
+    
+	  <input type="checkbox" id="no" name="no">
+      <label for="no">No</label><br><br>
+
+    <!-- Dog Breeds -->
+    <label for="dog breeds">Please select your preferred breeds:</label>
+    <select id="multiSelect">
+      <option value="">--Please choose an option--</option>
+      <option value="labrador">Labrador</option>
+      <option value="pomeranian">Pomeranian</option>
+      <option value="husky">Husky</option>
+    </select><br><br>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+    
+  </form>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
